@@ -1,0 +1,16 @@
+.contact {
+    text-align: center;
+}
+
+.contact .contact_right .form_header {
+    @include styleText($fs-7, $fw-3, $color-dark-1);
+}
+.contact .contact_right form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+    padding: $pd-4;
+}

@@ -99,7 +99,7 @@ html, body {
 }
 
 .wavy_banner .banner-cover {
-  padding: 56px 0;
+  padding-top: 56px;
 }
 
 .wavy_banner .banner-left {
@@ -130,12 +130,21 @@ html, body {
 
 .testimonial {
   background-color: #dcd1f3;
-  background-image: url(../../img/Violet_top_left_wave.png);
+  background-image: url(../img/Wave_White_bottom_right_shape_01.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 60px 0;
 }
 
 .testimonial .tes_item {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+
+.testimonial .tes_item:hover {
+  -webkit-box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial .tes_item .card-body {
@@ -182,5 +191,31 @@ html, body {
   font-size: 15px;
   font-weight: 400;
   color: #181818;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact .contact_right .form_header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #181818;
+}
+
+.contact .contact_right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 25px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,17 @@
 .testimonial{
     background-color: $color-purple;
-    background-image: url(../../img/Violet_top_left_wave.png);
+    background-image: url(../img/Wave_White_bottom_right_shape_01.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: $pd-6 0 ;
 }
 .testimonial .tes_item{
     transition: all 300ms ease-in-out;
 }
 
 .testimonial .tes_item:hover{
-    // box-shadow: 0 30px 30px -10px  rgb(0 0 0 / 20%);
+    box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial .tes_item .card-body{

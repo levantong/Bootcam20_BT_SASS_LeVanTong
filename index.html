@@ -28,15 +28,14 @@
 <body>
     <!-- header (navbar) -->
     <header id="header">
-        <div class="container">
-            <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-xl">
                 <a class="navbar-brand" href="#">
                     <img src="./img/crest.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wavy-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="wavy-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
@@ -68,8 +67,8 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <!-- banner -->
@@ -77,7 +76,7 @@
         <div class="img_top">
             <img src="./img/yellow_top_wave_01.png" alt="">
         </div>
-        <div class="container">
+        <div class="container-xl">
             <div class="row banner-cover">
                 <div class="col-xl-6 col-md-6 col-12 banner-left">
                     <h3>ABOUT US</h3>
@@ -93,7 +92,7 @@
     <!-- testimonial -->
 
     <section class="testimonial">
-        <div class="container">
+        <div class="container-xl">
             <div class="testimonial_cover row">
                 <div class="col-sm-6 col-md-4 col-xl-3 card_bg">
                     <div class="card tes_item">
@@ -197,6 +196,48 @@
                             <p class="card-text">Capitalize on low hanging fruit to identify a ballpark.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="img_bottom">
+            <img src="./img/Wave_White_bottom_right_shape_01.png" alt="">
+        </div> -->
+    </section>
+
+    <section class="contact">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6 col-xl-7 col-12 contact_left">
+                    <img class="img-fluid" src="./img/conatct_inner.png" alt="conatct_inner">
+                </div>
+                <div class="col-md-6 col-xl-5 col-12 contact_right">
+                    <form>
+                        <span class="form_header">Find Your Course</span>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <input type="text" class="form-control" id="InputName" placeholder="Name">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-12">
+                                <input type="email" class="form-control" id="InputEmail" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="Lang-Select">
+                                <option>English</option>
+                                <option>French</option>
+                                <option>Spanish</option>
+                                <option>German</option>
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="InputMessage" placeholder="Message">
+                        </div>
+                        <div class="form-group pt-5">
+                            <button type="button" class="btn btn-primary">SEND</button>
+                        </div>
+                    </form>
+                    
                 </div>
             </div>
         </div>
