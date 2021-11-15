@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand img {
+  height: 80px;
+}
+
+.social_network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .navbar-nav a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+  display: block;
+  line-height: 64px;
+}
+
+#header .navbar-nav a:hover {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b61984;
+}
+
+#header .navbar {
+  padding: 0 30px;
+}
+
+#header .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .navbar-nav .nav-item {
+  padding-right: 34px;
+}
+
+#header .navbar-brand {
+  padding: 0;
+}
+
+#header .nav-call button {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #b61984;
+  padding: 1.1em 1.5em;
+  border: 2px solid #b61984;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+#header .nav-call button:hover {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b61984;
+  background: #ffffff;
+  padding: 1.1em 1.5em;
+  border: 2px solid #b61984;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+
+.wavy_banner {
+  background-image: url(../img/Violet_top_left_wave.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding: 60px 0;
+  position: relative;
+}
+
+.wavy_banner .img_top {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.wavy_banner .img_top img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wavy_banner .banner-cover {
+  padding: 56px 0;
+}
+
+.wavy_banner .banner-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: transparent;
+}
+
+.wavy_banner .banner-left h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.wavy_banner .banner-left h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+}
+
+.testimonial {
+  background-color: #dcd1f3;
+  background-image: url(../../img/Violet_top_left_wave.png);
+}
+
+.testimonial .tes_item {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.testimonial .tes_item .card-body {
+  text-align: center;
+  padding: 30px;
+}
+
+.testimonial .tes_item {
+  border-radius: 10px;
+}
+
+.testimonial .tes_item .tes_img {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.testimonial .tes_item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+  transition: -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out, -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+}
+
+.testimonial .tes_item img:hover {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+          transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.testimonial .tes_item .card-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b61984;
+}
+
+.testimonial .tes_item .card-name {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.testimonial .tes_item .card-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #181818;
+}
+/*# sourceMappingURL=main.css.map */

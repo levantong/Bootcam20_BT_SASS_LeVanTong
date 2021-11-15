@@ -1,0 +1,39 @@
+.wavy_banner{
+    background-image: url(../img/Violet_top_left_wave.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding: $pd-6 0;
+    position: relative;
+}
+.wavy_banner .img_top{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    
+}
+.wavy_banner .img_top img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.wavy_banner .banner-cover{
+    padding: $pd-7 0;
+}
+.wavy_banner .banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: transparent
+
+}
+.wavy_banner .banner-left h1{
+    @include styleText($fs-8,$fw-3,$color-dark-2);
+
+}
+.wavy_banner .banner-left h3{
+    @include styleText($fs-5,$fw-2,$color-pink);
+
+}
