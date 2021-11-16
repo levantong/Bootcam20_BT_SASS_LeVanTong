@@ -1,8 +1,12 @@
+//tạo định dạng kiểu text
+
 @mixin styleText($fs,$fw,$cl) {
     font-size: $fs ;
     font-weight: $fw ;
     color: $cl ;
 }
+
+//tạo định dạng kiểu Button
 
 @mixin styleButton($bg, $pd-y, $pd-x, $bd, $radius, $ls) {
     background: $bg;
@@ -10,4 +14,17 @@
     border: $bd;
     border-radius: $radius;
     letter-spacing: $ls;
+}
+
+//tạo định dạng kiểu repoinsive
+@mixin mediaQuery($screen) {
+    @if (map-has-key($map:$breakpoints, $key:$screen)) {
+        $value: map-get($map:$breakpoints, $key:$screen);
+        @media screen and (max-width:$value) {
+            @content;
+        }
+    } @else{
+        @warn "Screen không tồn tại"
+    }
+    
 }

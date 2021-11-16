@@ -19,6 +19,10 @@ html, body {
   display: flex;
 }
 
+#header .social_network a {
+  padding: 16px 0;
+}
+
 #header .navbar-nav a {
   font-size: 13px;
   font-weight: 600;
@@ -35,6 +39,8 @@ html, body {
 
 #header .navbar {
   padding: 0 30px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
 #header .navbar-nav {
@@ -52,6 +58,7 @@ html, body {
 }
 
 #header .nav-call button {
+  min-width: 200px;
   outline: none;
   font-weight: 600;
   text-align: center;
@@ -74,6 +81,16 @@ html, body {
   color: #b61984;
   -webkit-box-shadow: 0 0 0 1px #fff inset;
           box-shadow: 0 0 0 1px #fff inset;
+}
+
+@media screen and (max-width: 992px) {
+  #header .navbar-nav a {
+    line-height: 1.5;
+  }
+  #header .navbar {
+    background-color: #fff;
+    text-align: right;
+  }
 }
 
 .wavy_banner {
@@ -127,6 +144,14 @@ html, body {
   font-size: 1.1rem;
   font-weight: 600;
   color: #b61984;
+}
+
+@media screen and (max-width: 992px) {
+  .wavy_banner .banner-left h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #191919;
+  }
 }
 
 .testimonial {

@@ -37,3 +37,11 @@
     @include styleText($fs-5,$fw-2,$color-pink);
 
 }
+
+@include mediaQuery("large"){
+    .wavy_banner .banner-left h1{
+        @include styleText($fs-7,$fw-3,$color-dark-2);
+    
+    }
+
+}
