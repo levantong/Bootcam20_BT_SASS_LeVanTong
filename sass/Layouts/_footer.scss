@@ -1,0 +1,82 @@
+footer {
+    background-image: url(../../img/footer_background.jpg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $color-pink-dark;
+    padding: $pd-12 0;
+    @include styleText($fs-9, $fw-1, $color-white);
+    font-family: "Roboto", sans-serif;
+}
+
+.footer_item {
+    padding: $pd-3;
+}
+.footer_item li {
+    list-style: none;
+    padding: $pd-9 0 0 0;
+}
+.footer_link li,
+.footer_about li {
+    padding: $pd-9 0 $pd-8 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer_item a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.footer_contact a{
+    &:hover {
+        color: $color-dark-1;
+    }
+}
+.footer_item h3 {
+    @include styleText($fs-6, $fw-3, $color-white);
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: $pd-8;
+}
+.footer_newsletter li {
+    // text-align: center;
+}
+#newsletter_input {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 500ms ease;
+    border-radius: 50px;
+    outline: none;
+    font: inherit;
+    width: 100%;
+    background: transparent;
+    line-height: 1;
+    display: block;
+    padding: 1em;
+    color: inherit;
+    &::placeholder {
+        text-align: center;
+        @include styleText($fs-9, $fw-1, $color-white);
+    }
+    &:focus {
+        border: 1px solid rgba(255, 255, 255, 1);
+    }
+}
+#newsletter_btn {
+    outline: none;
+    box-shadow: 0 0 0 3em $color-white inset;
+    color: $color-dark-1;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    font-weight: $fw-2;
+    @include styleButton(transparent, 1em, 1em, none, 50px, 1px);
+    font-size: 0.9em;
+    transition: all 300ms ease;
+    &:hover {
+        box-shadow: 0 0 0 1px $color-white inset;
+        color: $color-white;
+    }
+}

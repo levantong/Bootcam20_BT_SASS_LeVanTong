@@ -52,11 +52,17 @@ html, body {
 }
 
 #header .nav-call button {
+  outline: none;
+  font-weight: 600;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+          box-shadow: 0 0 0 3em #b61984 inset;
+  color: #181818;
   font-size: 13px;
   font-weight: 600;
-  color: #ffffff;
-  background: #b61984;
-  padding: 1.1em 1.5em;
+  color: #fff;
+  background: transparent;
+  padding: 0.8em 1.5em;
   border: 2px solid #b61984;
   border-radius: 50px;
   letter-spacing: 1px;
@@ -65,14 +71,9 @@ html, body {
 }
 
 #header .nav-call button:hover {
-  font-size: 13px;
-  font-weight: 600;
   color: #b61984;
-  background: #ffffff;
-  padding: 1.1em 1.5em;
-  border: 2px solid #b61984;
-  border-radius: 50px;
-  letter-spacing: 1px;
+  -webkit-box-shadow: 0 0 0 1px #fff inset;
+          box-shadow: 0 0 0 1px #fff inset;
 }
 
 .wavy_banner {
@@ -193,14 +194,169 @@ html, body {
   color: #181818;
 }
 
-.contact {
+footer {
+  background-image: url(../../img/footer_background.jpg);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #aa017e;
+  padding: 110px 0;
+  font-size: 12.6px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer_item {
+  padding: 30px;
+}
+
+.footer_item li {
+  list-style: none;
+  padding: 14px 0 0 0;
+}
+
+.footer_link li,
+.footer_about li {
+  padding: 14px 0 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer_item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer_item a:hover {
+  opacity: 0.8;
+}
+
+.footer_contact a:hover {
+  color: #181818;
+}
+
+.footer_item h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 8px;
+}
+
+#newsletter_input {
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  border-radius: 50px;
+  outline: none;
+  font: inherit;
+  width: 100%;
+  background: transparent;
+  line-height: 1;
+  display: block;
+  padding: 1em;
+  color: inherit;
+}
+
+#newsletter_input::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 12.6px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#newsletter_input:-ms-input-placeholder {
+  text-align: center;
+  font-size: 12.6px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#newsletter_input::-ms-input-placeholder {
+  text-align: center;
+  font-size: 12.6px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#newsletter_input::placeholder {
+  text-align: center;
+  font-size: 12.6px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#newsletter_input:focus {
+  border: 1px solid white;
+}
+
+#newsletter_btn {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 3em #fff inset;
+          box-shadow: 0 0 0 3em #fff inset;
+  color: #181818;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-weight: 600;
+  background: transparent;
+  padding: 1em 1em;
+  border: none;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+#newsletter_btn:hover {
+  -webkit-box-shadow: 0 0 0 1px #fff inset;
+          box-shadow: 0 0 0 1px #fff inset;
+  color: #fff;
+}
+
+.contact {
+  background-image: url(../../img/accent_bottom_wave_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.contact .contact_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contact .contact_right input, .contact .contact_right select {
+  border-radius: 50px;
+  outline: none;
+  font: inherit;
+  width: 100%;
+  background: transparent;
+  line-height: 1;
+  display: block;
+  padding: 11px !important;
+  font-size: 11px !important;
+  height: 37px;
+  color: inherit;
+}
+
+.contact .contact_right #InputMessage {
+  height: 90px;
+  line-height: 1.5;
+  border-radius: 20px;
 }
 
 .contact .contact_right .form_header {
   font-size: 2.5rem;
   font-weight: 700;
   color: #181818;
+  margin-bottom: 50px;
 }
 
 .contact .contact_right form {
@@ -217,5 +373,20 @@ html, body {
   -webkit-box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
   padding: 25px;
+}
+
+.contact .contact_right .btn-primary {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 150px;
+  background: #b61984;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 3.1em;
 }
 /*# sourceMappingURL=main.css.map */

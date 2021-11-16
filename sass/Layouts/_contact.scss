@@ -1,9 +1,37 @@
-.contact {
-    text-align: center;
+.contact{
+    background-image: url(../../img/accent_bottom_wave_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.contact .contact_right{
+    display: flex;
+    align-content: center;
+}
+.contact .contact_right input, .contact .contact_right select{
+    border-radius: 50px;
+    outline: none;
+    font: inherit;
+    width: 100%;
+    background: transparent;
+    line-height: 1;
+    display: block;
+    padding: 11px !important;
+    font-size: 11px !important;
+    height: 37px;
+    color: inherit;
+}
+.contact .contact_right #InputMessage{
+    height: 90px;
+    line-height: 1.5;
+    border-radius: 20px;
+
+
 }
 
 .contact .contact_right .form_header {
     @include styleText($fs-7, $fw-3, $color-dark-1);
+    margin-bottom: $pd-5;
 }
 .contact .contact_right form {
     display: flex;
@@ -13,4 +41,12 @@
     overflow: hidden;
     box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
     padding: $pd-4;
+}
+.contact .contact_right .btn-primary{
+    margin-top: $pd-3;
+    width: 100%;
+    max-width: 150px;
+    @include styleButton($color-pink,8px,8px,none,50px,1px);
+    @include styleText($fs-1,$fw-2,$color-white);
+    line-height: 3.1em;
 }

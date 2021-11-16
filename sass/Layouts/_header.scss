@@ -31,11 +31,18 @@
     padding: 0;
 }
 #header .nav-call button {
+    outline: none;
+    font-weight: $fw-2;
+    text-align: center;
+    box-shadow: 0 0 0 3em $color-pink inset;
+    color: $color-dark-1;
     @include styleText($fs-3, $fw-2, $color-white);
-    @include styleButton($color-pink, 1.1em, 1.5em, 2px solid $color-pink, 50px, 1px);
+    @include styleButton(transparent, .8em, 1.5em, 2px solid $color-pink, 50px, 1px);
     transition: all 300ms ease;
     &:hover {
-        @include styleText($fs-3, $fw-2, $color-pink);
-        @include styleButton($color-white, 1.1em, 1.5em, 2px solid $color-pink, 50px, 1px);
+        color: $color-pink;
+    box-shadow: 0 0 0 1px $color-white inset;
+        
+
     }
 }
