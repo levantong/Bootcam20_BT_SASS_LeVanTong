@@ -332,8 +332,13 @@ footer {
       align-content: center;
 }
 
+.contact_right .form-group {
+  position: relative;
+}
+
 .contact_right input,
-.contact_right select {
+.contact_right select,
+.contact_right textarea {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
@@ -342,14 +347,15 @@ footer {
   background: transparent;
   line-height: 1;
   display: block;
-  padding: 11px !important;
+  padding: 11px 11px 11px 38px !important;
   font-size: 11px !important;
   height: 37px;
-  color: inherit;
+  color: #181818;
 }
 
 .contact_right input:focus,
-.contact_right select:focus {
+.contact_right select:focus,
+.contact_right textarea:focus {
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -359,12 +365,6 @@ footer {
   height: 90px;
   line-height: 1.5;
   border-radius: 20px;
-}
-
-#InputName::before {
-  content: "\f007";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
 }
 
 .contact_right .form_header {
@@ -391,7 +391,7 @@ footer {
 }
 
 .contact_right .contact_btn {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   max-width: 150px;
   background: transparent;
@@ -414,5 +414,38 @@ footer {
   color: #b61984;
   -webkit-box-shadow: 0 0 0 1px #b61984 inset;
           box-shadow: 0 0 0 1px #b61984 inset;
+}
+
+.InputName_icon::before,
+.InputEmail_icon::before,
+.Lang-Select_icon::before,
+.InputMessage_icon::before {
+  font-size: 13px !important;
+  color: #b61984;
+  position: absolute;
+  left: 0;
+  padding-left: 28px;
+  top: 12px;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.InputName_icon::before {
+  content: "\f007";
+}
+
+.InputEmail_icon::before {
+  content: "\f0e0";
+}
+
+.Lang-Select_icon::before {
+  content: "\f19d";
+  padding-left: 16px;
+}
+
+.InputMessage_icon::before {
+  content: "\f4ad";
+  padding-left: 16px;
 }
 /*# sourceMappingURL=main.css.map */
